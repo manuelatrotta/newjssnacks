@@ -1,17 +1,12 @@
 alert('ola');
 
-//scrivi la parola data al rovescio
+//stampa la prima e l'ultima lettera
+//charAt() restituisce il carattere all'indice specificato in una stringa.
 
-var parolaDaRovesciare = prompt('inserire una parola')
+var name = 'manuela';
 
-function reverse(parola) {
- var contrario ='';
-  for (i=parola.length -1; i>=0; i--) {
-    var contrario = contrario + parola[i]
-  }
-  return contrario;
-}
+var first = name.charAt(0);
 
-var rovesciata = reverse(parolaDaRovesciare);
+var last = name.charAt(6);
 
-console.log(rovesciata);
+console.log(first, last);
